@@ -25,7 +25,7 @@
   grid-template-columns: repeat(4, 1fr) !important; /* 3 colunas */
   gap: 100px !important; /* Espaçamento entre os itens */
   margin: auto 100px !important; /* Margem para separar da seção anterior */
-  padding-top: 60px;
+  padding-top: 30px;
   padding-bottom: 60px;
 }
 
