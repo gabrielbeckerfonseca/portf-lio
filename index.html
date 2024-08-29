@@ -10,6 +10,7 @@
 
 
     <!-- Lib Text CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Favicon -->
      <link rel="shortcut icon" href="./icons/desenvolvedor.png" type="image/x-icon">
@@ -20,7 +21,7 @@
 
 </head>
 <body>
-    <div style="background-image: url(./bg2.jpg);" class="container-fluid container00 container01">
+    <div class="container00 container01">
         <div class="container">
             <header class="header">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent pt-4">
@@ -33,7 +34,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
+                            <div class="navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="#about">ABOUT ME</a>
                                 </li>
@@ -49,19 +50,22 @@
                 </nav>
             </header>
         </div>
-        <div class="container title" id="i">
-            <p class="h5" id="i">Olá, meu nome é</p>
-            <p class="h1" id="i">Gabriel Becker da Fonseca</p>
-            <p class="h5" id="i">Desenvolvedor Web</p>
-            <button type="button" class="btn btn-outline-light mt-5" id="button">SAIBA MAIS</button>
+        <div class="container text" id="i" data-aos="fade-up">
+            <p class="h3">Olá, meu nome é</p>
+            <p class="h1">Gabriel Becker da Fonseca</p>
+            <p class="h3">Desenvolvedor Web</p>
         </div>
     </div>
 
-    <div class="container-fluid container00 container02" id="about">
-        <div class="container title" id="about">
-            <p class="h6" id="about">SOBRE MIM</p>
-            <p class="h2" id="about">Quem eu sou</p>
-            <p class="h6" id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum quo molestiae asperiores, optio hic cupiditate dolorum iste similique fugiat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel numquam sequi possimus incidunt doloribus consequuntur, pariatur natus velit quaerat iusto.</p>
+    <div class="container00 container02" id="about">
+        <div class="container text">
+            <p class="h6">SOBRE MIM</p>
+            <p class="h2">Quem eu sou</p>
+            <p class="h6">Estou em uma fase de transição para a área de Tecnologia da Informação, com foco em desenvolvimento de software. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas pela Uninter.</p> 
+            <br>
+            <p class="h6">Com uma experiência anterior em psicologia, especialmente com foco no autismo, desenvolvi habilidades interpessoais e um entendimento profundo de necessidades específicas, o que me trouxe uma perspectiva única na resolução de problemas.</p>
+            <br>
+            <p class="h6">Agora, estou ansioso para aplicar esse conhecimento em tecnologia, e busco iniciar um estágio em desenvolvimento de sistemas, utilizando HTML, CSS, JavaScript, TypeScript e React. Estou motivado para contribuir com soluções inovadoras e continuar minha evolução como desenvolvedor em um ambiente dinâmico e desafiador.</p>
             <a href="./curriculumVitae.pdf" download="curriculumVitae.pdf">
                 <button type="button" class="btn btn-outline-light mt-5">DOWNLOAD CURRÍCULO</button>
             </a>
@@ -69,128 +73,130 @@
     </div>
 
     <div class="container00 container03" id="skills">
-        <p style="background-color: rgb(41, 41, 41); text-align: center; padding: 30px 0 0 0;">HABILIDADES</p>
 
-    <div class="container-grid" id="skills">
-        <div class="category">
-            <img src="./icons/html.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">HTML5</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/css.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">CSS3</p>
-            <a href="./curriculumVitae.pdf" download="curriculumVitae.pdf">
-                <button type="button" class="btn btn-outline-light mt-2">DOWNLOAD</button>
-            </a>
-            <!-- <a href="https://www.flaticon.com/free-icons/css3" title="css3 icons">Css3 icons created by popcornarts - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/js.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">JavaScript</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/typescript.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">TypeScript</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/typescript" title="typescript icons">Typescript icons created by Freepik - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/git.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">Git</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/git" title="git icons">Git icons created by pocike - Flaticon</a> -->
-        </div>
-        <div class="category">
-                <img src="./icons/github.png" alt="categoryImg" class="categoryImg">
-                <p class="categoryTitle">Github</p>
-                <!-- <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/sass.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">Sass</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/sass" title="sass icons">Sass icons created by Freepik - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/bootstrap.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">Bootstrap</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/react.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">React</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Kiranshastry - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/nodejs.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">NodeJS</p> 
-            <!-- <a href="https://www.flaticon.com/free-icons/node" title="node icons">Node icons created by pocike - Flaticon</a> -->
-        </div>
-        <div class="category">
-            <img src="./icons/mongodb.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">MongoDB</p>
-        </div>
-        <div class="category">
-            <img src="./icons/sql.png" alt="categoryImg" class="categoryImg">
-            <p class="categoryTitle">SQL</p>
-            <!-- <a href="https://www.flaticon.com/free-icons/server" title="server icons">Server icons created by Pixel Buddha - Flaticon</a> -->
-        </div>
-    </div> 
+        <p class="title titleSkills">HABILIDADES</p>
+            <div class="container-grid">
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/html.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">HTML5</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/css.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">CSS3</p>
+                    <a href="./curriculumVitae.pdf" download="curriculumVitae.pdf">
+                        <button type="button" class="btn btn-outline-light mt-2">DOWNLOAD</button>
+                    </a>
+                    <!-- <a href="https://www.flaticon.com/free-icons/css3" title="css3 icons">Css3 icons created by popcornarts - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/js.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">JavaScript</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/typescript.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">TypeScript</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/typescript" title="typescript icons">Typescript icons created by Freepik - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/git.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">Git</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/git" title="git icons">Git icons created by pocike - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                        <img src="./icons/github.png" alt="categoryImg" class="categoryImg">
+                        <p class="categoryTitle">Github</p>
+                        <!-- <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/sass.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">Sass</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/sass" title="sass icons">Sass icons created by Freepik - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/bootstrap.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">Bootstrap</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/react.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">React</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/react" title="react icons">React icons created by Kiranshastry - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/nodejs.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">NodeJS</p> 
+                    <!-- <a href="https://www.flaticon.com/free-icons/node" title="node icons">Node icons created by pocike - Flaticon</a> -->
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/mongodb.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">MongoDB</p>
+                </div>
+                <div class="category" data-aos="flip-left">
+                    <img src="./icons/sql.png" alt="categoryImg" class="categoryImg">
+                    <p class="categoryTitle">SQL</p>
+                    <!-- <a href="https://www.flaticon.com/free-icons/server" title="server icons">Server icons created by Pixel Buddha - Flaticon</a> -->
+                </div>
+            </div> 
     </div>
 
-    <div class="containerCarouselWithMarkingAndControl" style="width: 500px; margin: 0 auto;" id="projects">
-        <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="100000">
-                    <p style="text-align: center;">Titulo</p>
-                    <img src="/images/geradordesenhas.png" class="d-block w-100" alt="2">
-                    <div class="carousel-caption" style="position: static;">
-                        <p style="background-color: blue; padding: 10px;">descrição Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero mollitia iure perferendis culpa...</p>
+    <div class="container00 container04" id="projects">
+        <p class="title titleProjects">PROJETOS</p>
+        <div class="containerCarouselWithMarkingAndControl" style="width: 500px; margin: 0 auto;">
+            <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
+                
+                <!-- Indicadores movidos para o topo -->
+                <div class="carousel-indicators" style="position: absolute; top: 10px; left: 0; right: 0; display: flex; justify-content: center; z-index: 10;">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+    
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="100000">
+                        <img src="/images/geradordesenhas.png" class="d-block w-100" alt="2">
+                        <div class="carousel-caption d-none d-md-block" style="position: static; margin-top: 10px;">
+                            <button type="button" class="btn btn-outline-light">ABRIR</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100000">
+                        <img src="./images/reactstock.png" class="d-block w-100" alt="5">
+                        <div class="carousel-caption d-none d-md-block" style="position: static; margin-top: 10px;">
+                            <button type="button" class="btn btn-outline-light">ABRIR</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="100000">
+                        <img src="./images/store.png" class="d-block w-100" alt="4">
+                        <div class="carousel-caption d-none d-md-block" style="position: static; margin-top: 10px;">
+                            <button type="button" class="btn btn-outline-light">ABRIR</button>
+
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="100000">
-                    <p style="text-align: center;">Titulo</p>
-                    <img src="./images/reactstock.png" class="d-block w-100" alt="5">
-                    <div class="carousel-caption" style="position: static;">
-                        <p style="background-color: blue; padding: 10px;">descrição Lorem ipsum...</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="100000">
-                    <p style="text-align: center;">Titulo</p>
-                    <img src="./images/store.png" class="d-block w-100" alt="4">
-                    <div class="carousel-caption" style="position: static;">
-                        <p style="background-color: blue; padding: 10px;">descrição Lorem ipsum...</p>
-                    </div>
-                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
     
-            
-            <!-- Carrossel dos projetos 
-                 <style>
+            <!--             <style>
         html {
             scroll-behavior: smooth;
         }
     </style>-->
 
-    <footer class="container-fluid footer">    
+    <footer class="footer">    
         <span class="me-4 copyOBC">Gabriel Becker da Fonseca © 2024</span>
-        <a href="https://www.instagram.com/onebitcode/?hl=en" target="blank" class="me-4">Instagram</a>
-        <a href="https://www.youtube.com/channel/UC44Mzz2-5TpyfklUCQ5NuxQ" class="me-4">YouTube</a>
-        <a href="https://twitter.com/onebitcode">Twitter</a>
+        <a href="https://www.linkedin.com/in/gabriel-becker-da-fonseca-52853a19b/" target="blank" class="me-4">Linkedin</a>
+        <a href="https://github.com/gabrielbeckerfonseca" target="_blank" class="me-4">Github</a>
     </footer>
 
 
@@ -200,6 +206,10 @@
 
 
     <!-- Lib Text Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
