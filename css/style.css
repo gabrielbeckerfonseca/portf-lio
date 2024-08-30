@@ -13,6 +13,7 @@
   font-size: 20px;
   font-family: "Dosis", system-ui;
   font-weight: 400;
+  outline: 1px solid red;
 }
 
 .header {
@@ -40,10 +41,6 @@
   background-color: rgb(58, 58, 58);
 }
 
-.text {
-  padding-top: 70px;
-}
-
 .container-grid {
   display: grid !important;
   grid-template-columns: repeat(4, 1fr) !important; /* 3 colunas */
@@ -51,6 +48,21 @@
   margin: auto 100px !important; /* Margem para separar da seção anterior */
   padding-top: 30px;
   padding-bottom: 60px;
+}
+
+.containerAbout {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  padding-top: 70px;
+}
+
+.containerProjects {
+  width: 500px;
+  height: 420px;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .title {
@@ -139,9 +151,27 @@
   .container-grid {
     display: grid !important;
     grid-template-columns: repeat(1, 1fr) !important;
-    margin: auto 100px !important; /* Margem para separar da seção anterior */
+    margin: 0 auto !important;
     padding-top: 30px;
     padding-bottom: 60px;
+  }
+}
+@media (max-width: 580px) {
+  .containerAbout {
+    width: 400px;
+    height: 800px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 70px;
+  }
+}
+@media (max-width: 540px) {
+  .containerProjects {
+    width: 400px;
+    height: 800px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 70px;
   }
 }
 
