@@ -41,16 +41,16 @@
     grid-template-columns: repeat(4, 1fr) !important; /* 3 colunas */
     gap: 100px !important; /* Espaçamento entre os itens */
     margin: auto 100px !important;/* Margem para separar da seção anterior */
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 60px;
 }   
 
 .containerAbout{
     width: 800px; 
-    height: 600px; 
+    min-height: 500px; 
     margin: 0 auto; 
-    padding-bottom: 10px; 
-    padding-top: 70px;
+    padding-bottom: 30px; 
+    padding-top: 30px;
 }
 
 .containerProjects{
@@ -63,24 +63,60 @@
 .title{
     text-align: center; 
     padding: 30px 0 0 0;
-    font-size: 30px;
+    font-size: 32px;
 }
 
-.titleSkills{
+.title {
+    &.titleSkills{
     background-color: rgb(41, 41, 41)
+    }   
+    &.titleProjects{
+    background-color: rgb(58, 58, 58)
+    }
 }
 
-.titleProjects{
-    background-color: rgb(58, 58, 58)
+.titleName{
+    padding-top: 80px;
+}
+
+.titleAbout{
+    font-size: 30px;
+    text-align: center;
+    padding-top: -10px;
+}
+
+.textAbout{
+    font-size: 20px;
+    text-align: justify;
 }
 
 .category {
     background-color: rgb(58, 58, 58);
-    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
     text-align: center;
     border-radius: 8px;
     color: white;
     
+}
+.carousel-control-prev {
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
 }
 
 .categoryImg {
@@ -101,6 +137,21 @@
     width: 60px;
     margin-left: -10px;
     margin-right: 20px;
+}
+
+.logoWeb{
+    padding-top: 30px;
+    width: 60px;
+}
+
+.logoCertificate{
+    width: 40px;
+    padding-top: 10px;
+}
+
+.btn{
+    font-size: 14px;
+    
 }
 
 .footer{
@@ -148,24 +199,26 @@
     }   
 }
 
-@media(max-width: 741px){
+@media(max-width: 768px){
     .container-grid {
         display: grid !important;
         grid-template-columns: repeat(1, 1fr) !important;
         margin: 0 auto !important;
         padding-top: 30px;
         padding-bottom: 60px;
-    }   
-}
-
-@media (max-width: 580px) {
+    }  
     .containerAbout {
         width: 400px; 
-        height: 800px; 
+        height: 880px; 
         margin: 0 auto; 
         padding-bottom: 10px; 
         padding-top: 70px;
+    } 
+    .category {
+        margin: auto;
+        width: 40%;        
     }
+   
 }
 
 

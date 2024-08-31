@@ -51,7 +51,7 @@
                 </nav>
             </header>
         </div>
-        <div class="container text" data-aos="fade-up">
+        <div class="container titleName" data-aos="fade-up">
             <p class="h3">Olá, meu nome é</p>
             <p class="h1">Gabriel Becker da Fonseca</p>
             <p class="h3">Desenvolvedor Web</p>
@@ -59,14 +59,11 @@
     </div>
 
     <div class="container00 container02" id="about">
-        <div class="container containerAbout">
-            <p class="h6">SOBRE MIM</p>
-            <p class="h2">Quem eu sou</p>
-            <p class="h6">Estou em uma fase de transição para a área de Tecnologia da Informação, com foco em desenvolvimento de software. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas pela Uninter.</p> 
-            <br>
-            <p class="h6">Com uma experiência anterior em psicologia, especialmente com foco no autismo, desenvolvi habilidades interpessoais e um entendimento profundo de necessidades específicas, o que me trouxe uma perspectiva única na resolução de problemas.</p>
-            <br>
-            <p class="h6">Agora, estou ansioso para aplicar esse conhecimento em tecnologia, e busco iniciar um estágio em desenvolvimento de sistemas, utilizando HTML, CSS, JavaScript, TypeScript e React. Estou motivado para contribuir com soluções inovadoras e continuar minha evolução como desenvolvedor em um ambiente dinâmico e desafiador.</p>
+        <div class="container containerAbout" data-aos="zoom-in">
+            <p class="titleAbout">SOBRE MIM</p>
+            <p class="textAbout">Estou em uma fase de transição para a área de Tecnologia da Informação, com foco em desenvolvimento de software. Atualmente, sou estudante de Análise e Desenvolvimento de Sistemas pela Uninter.</p> 
+            <p class="textAbout">Com uma experiência anterior em psicologia, especialmente com foco no autismo, desenvolvi habilidades interpessoais e um entendimento profundo de necessidades específicas, o que me trouxe uma perspectiva única na resolução de problemas.</p>
+            <p class="textAbout">Agora, estou ansioso para aplicar esse conhecimento em tecnologia, e busco iniciar um estágio em desenvolvimento de sistemas, utilizando HTML, CSS, JavaScript, TypeScript e React. Estou motivado para contribuir com soluções inovadoras e continuar minha evolução como desenvolvedor em um ambiente dinâmico e desafiador.</p>
             <a href="./curriculumVitae.pdf" download="curriculumVitae.pdf">
                 <button type="button" class="btn btn-outline-light mt-3">DOWNLOAD CURRÍCULO</button>
             </a>
@@ -78,8 +75,12 @@
             <div class="container-grid">
                 <div class="category" data-aos="flip-left">
                     <img src="./icons/html.png" alt="categoryImg" class="categoryImg">
-                    <p class="categoryTitle">HTML5</p>
                     <!-- <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a> -->
+                    <p class="categoryTitle">HTML5</p>
+                    <a href="https://black-nextjs-eight-kappa.vercel.app/" target="_blank">
+                            <img src="./icons/certificate.png" alt="logoCertificate" class="logoCertificate">
+                    </a>
+                    <!-- <a href="https://www.flaticon.com/free-icons/award" title="award icons">Award icons created by Freepik - Flaticon</a>-->
                 </div>
                 <div class="category" data-aos="flip-left">
                     <img src="./icons/css.png" alt="categoryImg" class="categoryImg">
@@ -93,6 +94,9 @@
                     <img src="./icons/js.png" alt="categoryImg" class="categoryImg">
                     <p class="categoryTitle">JavaScript</p>
                     <!-- <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a> -->
+                    <a href="https://black-nextjs-eight-kappa.vercel.app/" target="_blank">
+                        <img src="./icons/certificate.png" alt="logoCertificate" class="logoCertificate">
+                    </a>
                 </div>
                 <div class="category" data-aos="flip-left">
                     <img src="./icons/typescript.png" alt="categoryImg" class="categoryImg">
@@ -118,6 +122,9 @@
                     <img src="./icons/bootstrap.png" alt="categoryImg" class="categoryImg">
                     <p class="categoryTitle">Bootstrap</p>
                     <!-- <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a> -->
+                    <a href="https://black-nextjs-eight-kappa.vercel.app/" target="_blank">
+                        <img src="./winner.png" alt="logoCertificate" class="logoCertificate">
+                    </a>
                 </div>
                 <div class="category" data-aos="flip-left">
                     <img src="./icons/react.png" alt="categoryImg" class="categoryImg">
@@ -146,8 +153,7 @@
         <div class="container containerProjects">
             <div id="carouselExampleIndicators" class="carousel slide my-5" data-bs-ride="carousel">
                 
-                <!-- Indicadores movidos para o topo -->
-                <div class="carousel-indicators" style="position: absolute; top: 10px; left: 0; right: 0; display: flex; justify-content: center; z-index: 10;">
+                <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -156,22 +162,31 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="100000">
                         <img src="/images/geradordesenhas.png" class="d-block w-100" alt="2">
-                        <button type="button" class="btn btn-outline-light mt-4">ABRIR</button>
-
-                        <div class="carousel-caption d-none d-md-block" style="position: static; margin-top: 10px;">
+                        <div class="d-flex justify-content-center">
+                            <a href="https://password-generate-seven.vercel.app/" target="_blank">
+                                <img src="./icons/web.png" alt="logoWeb" class="logoWeb">
+                                <!-- <button type="button" class="btn btn-outline-light mt-4">ABRIR</button> 
+                                 Caso eu queira usar o botão em vez do icon -->
+                            </a>
                         </div>
+                        <!-- Caso futuramente eu queira adicionar alguma legenda 
+                        <div class="carousel-caption d-none d-md-block" style="position: static; margin-top: 10px;">                      </div> -->
                     </div>
                     <div class="carousel-item" data-bs-interval="100000">
                         <img src="./images/reactstock.png" class="d-block w-100" alt="5">
-                        <div class="carousel-caption d-none d-md-block" style="position: static; margin-top: 10px;">
-                            <button type="button" class="btn btn-outline-light mt-4">ABRIR</button>
-                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://react-stock-zeta.vercel.app/" target="_blank">
+                                <img src="./icons/web.png" alt="logoWeb" class="logoWeb">
+                                <!-- <a href="https://www.flaticon.com/free-icons/web-site" title="web site icons">Web site icons created by Kalashnyk - Flaticon</a> -->
+                            </a>
+                        </div>                        
                     </div>
                     <div class="carousel-item" data-bs-interval="100000">
                         <img src="./images/store.png" class="d-block w-100" alt="4">
-                        <div class="carousel-caption d-none d-md-block" style="position: static; margin-top: 10px;">
-                            <button type="button" class="btn btn-outline-light mt-4">ABRIR</button>
-
+                        <div class="d-flex justify-content-center">
+                            <a href="https://black-nextjs-eight-kappa.vercel.app/" target="_blank">
+                                <img src="./icons/web.png" alt="logoWeb" class="logoWeb">
+                            </a>
                         </div>
                     </div>
                 </div>
